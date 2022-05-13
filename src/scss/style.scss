@@ -2,17 +2,26 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+}
+
+section {
+    margin: 0 auto;
+    width: 80%;
+}
 
 .header {
     display: flex;
     justify-content: space-between;
-    height: 10em;
+    height: 5em;
     width: 100%;
     background: lightgrey;
 
     img {
         height: 4em;
         width: 4em;
+        margin:0.5em 0.5em;
     }
 }
 
