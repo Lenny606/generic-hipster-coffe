@@ -63,6 +63,7 @@ h2 {
         font-family: $main_font;
         text-decoration: none;
         margin: 1em;
+        
 
     }
 }
@@ -117,6 +118,7 @@ img {
 
 img {
     width: 100%;
+    
 }
 
 
@@ -176,7 +178,7 @@ img {
 }
 
 
-.footer {
+.foot {
     display: flex;
     width: 100%;
     padding-top: 2em;
@@ -184,7 +186,7 @@ img {
     flex-direction: column;
     justify-items: center;
 
-    background: rgb(67, 59, 74);
+    background: rgb(232, 220, 241);
 
     &__head {
         display: flex;
@@ -200,12 +202,12 @@ img {
         color: bisque;
     }
 
-    .footer-content {
+    .foot-content {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-items: center;
-        color: bisque;
+        color:  darkgrey;
         align-items: center;
     }
 
@@ -220,8 +222,9 @@ img {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    width: 80%;
+    width: 100%;
     height: 100%;
+    background:  darkgrey;
     
    
     
@@ -229,6 +232,7 @@ img {
         display: flex;
         flex-direction: row;
         align-content: center;
+        
         width: 50%;
         height: 30%;
         
@@ -248,17 +252,15 @@ img {
         padding: 1em;
     }
 
-.cards{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    &__card1{
-        width: 20%;
-    }
 
     .card{
-        width: 50%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+
     }
 
-}
+
