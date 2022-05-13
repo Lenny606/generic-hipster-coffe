@@ -15,33 +15,40 @@ html {
     margin: 0;
 }
 
-
 body {
     margin: 0 auto;
-}
-
-
-section {
     width: 80%;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+h1 {
+    font-family: $main_font;
+    font-size: 3em;
+    padding: 1em 0em;
+}
 
-
+h2 {
+    font-family: $main_font;
+    font-size: 2em;
+    padding-bottom: 1em;
+}
 
 .header {
     display: flex;
     justify-content: space-between;
-    height: 5em;
+    height: 9em;
     width: 100%;
     background: lightgrey;
     position: sticky;
     margin: 0;
     top: 0;
 
+
     img {
-        height: 4em;
-        width: 4em;
+        height: 8em;
+        width: 8em;
         margin: 0.5em 0.5em;
     }
 }
@@ -56,13 +63,14 @@ section {
         font-weight: 300;
         font-family: $main_font;
         text-decoration: none;
-        margin: 0.5em;
+        margin: 1em;
 
     }
 }
 
 .info {
     display: flex;
+    margin: 1em 0em;
 }
 
 img {
@@ -72,14 +80,20 @@ img {
 .info {
     display: flex;
     justify-content: flex-start;
+    font-family: Roboto;
 
     &__block {
         margin-right: 5em;
-        // font-style: ;
+        font-family: $main_font;
+
+        >p {
+            font-size: 1em;
+        }
 
 
-        &_font-bigger {
-            font-size: 1.5em;
+        .block_font-bigger {
+            font-size: 2em;
+            margin-bottom: 1em;
         }
     }
 }
@@ -106,9 +120,6 @@ img {
     width: 100%;
 }
 
-.map {
-    height: 200px;
-}
 
 .section2 {
     display: flex;
@@ -158,3 +169,50 @@ img {
                 width: 100%;
             }
         }
+        
+.mapouter {
+    padding-left: auto;
+    padding-right: auto;
+    margin-bottom: -2em;
+}
+
+
+.footer {
+    display: flex;
+    width: 100%;
+    padding-top: 2em;
+
+    flex-direction: column;
+    justify-items: center;
+
+    background: rgb(67, 59, 74);
+
+    &__head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        align-content: center;
+
+        color: rgb(34, 134, 248);
+    }
+
+    &__head_current {
+        color: bisque;
+    }
+
+    .footer-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        color: bisque;
+        align-items: center;
+    }
+
+    a {
+        padding-top: 2em;
+        color: rgb(17, 105, 120);
+    }
+
+}
