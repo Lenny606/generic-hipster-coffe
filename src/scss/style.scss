@@ -1,0 +1,30 @@
+
+.footer{
+ display: flex;   
+ flex-direction: column;
+ color: rgb(26, 42, 57); 
+ width: 100%;
+ height: 100%;
+ &.footer-head{
+     display: flex;
+     flex-direction: row;
+     color: blue;
+
+
+ }  
+
+}
+.footer-content{
+    >h2{
+        color: aliceblue;
+        font-weight: bold;
+
+    }
+    >p{
+        color: whitesmoke;
+        a{
+            color: blue;
+        }
+    }
+
+}
