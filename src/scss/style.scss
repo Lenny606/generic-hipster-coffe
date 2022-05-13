@@ -1,7 +1,9 @@
-* {
+html {
     box-sizing: border-box;
+
 }
 
+<<<<<<< HEAD
 body {
     width: 100%;
 }
@@ -10,6 +12,31 @@ section {
     margin: 0 auto;
     width: 80%;
 }
+=======
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+}
+
+
+body {
+    margin: 0 auto;
+}
+
+
+section {
+    width: 80%;
+    
+}
+
+
+
+>>>>>>> feat/basic-styles
 
 .header {
     display: flex;
@@ -33,7 +60,7 @@ section {
         line-height: 28px;
         color: darkgrey;
         font-weight: 300;
-        font-family: "Roboto Condensed";
+        font-family: $main_font;
         text-decoration: none;
         margin: 0.5em;
 
@@ -46,6 +73,43 @@ section {
 
 img {
     width: 50%;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-start;
+
+    &__block {
+        margin-right: 5em;
+        // font-style: ;
+
+
+        &_font-bigger {
+            font-size: 1.5em;
+    }
+}
+}
+
+// media for responsive layout
+
+// @media (min-width: 480px) {
+
+//     body {
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     .info {
+//         display: flex;
+//         flex-direction: column;
+//         width: 100%;
+
+//     }
+// }
+
+
+img {
+    width: 100%;
 }
 
 .map {
