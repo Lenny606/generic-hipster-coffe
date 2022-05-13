@@ -4,6 +4,7 @@
 
 body {
     width: 100%;
+    margin:0;
 }
 
 section {
@@ -17,6 +18,9 @@ section {
     height: 5em;
     width: 100%;
     background: lightgrey;
+    position: sticky;
+    margin:0;
+    top: 0;
 
     img {
         height: 4em;
