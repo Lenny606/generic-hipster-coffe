@@ -1,3 +1,5 @@
+$main_font: "Roboto Condensed";
+
 html {
     box-sizing: border-box;
 
@@ -21,7 +23,7 @@ body {
 
 section {
     width: 80%;
-    
+
 }
 
 
@@ -34,13 +36,13 @@ section {
     width: 100%;
     background: lightgrey;
     position: sticky;
-    margin:0;
+    margin: 0;
     top: 0;
 
     img {
         height: 4em;
         width: 4em;
-        margin:0.5em 0.5em;
+        margin: 0.5em 0.5em;
     }
 }
 
@@ -78,8 +80,8 @@ img {
 
         &_font-bigger {
             font-size: 1.5em;
+        }
     }
-}
 }
 
 // media for responsive layout
@@ -107,3 +109,52 @@ img {
 .map {
     height: 200px;
 }
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 80%;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+    // .section2__box {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-between;
+    //     width: 50%;
+    //     border: 3px soli green
+    
+
+    // ul {
+    //     list-style: none
+    // }
+// }
+        .section2__espreso {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+           
+        }
+    
+
+        .section2__rows {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+        
+            
+            &_items {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
